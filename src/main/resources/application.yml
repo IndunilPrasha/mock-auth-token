@@ -1,0 +1,14 @@
+spring:
+  application.name=mock-adfs-issuer
+
+server:
+  port: 8081
+
+mock-adfs:
+  jwt:
+    issuer: http://localhost:8081
+    secret: mock-adfs-secret-key-1234567890
+    expires-in-seconds: 6000
+  clients:
+    - client-id: c40eff8e-bb1b-4de9-b9e3-16a4922201f8
+      client-secret: p79CDahgrtfdFoiy6QOYWd3ZT9wyKfCJyHRcb7a9
